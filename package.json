@@ -38,7 +38,6 @@
     "latest:hugo": "gh release view --repo gohugoio/hugo",
     "latest:hyas": "gh release view --repo h-enk/hyas",
     "copy:katex-fonts": "shx cp ./node_modules/katex/dist/fonts/* ./static/fonts/",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended --destination node_modules/.bin/hugo",
     "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
