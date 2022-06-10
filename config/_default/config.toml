@@ -1,4 +1,4 @@
-baseurl = "https://hyas.netlify.app/"
+baseurl = "https://www.thomaspeissl.com/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
