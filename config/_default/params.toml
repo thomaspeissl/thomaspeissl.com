@@ -4,12 +4,12 @@
 title = "Thomas Peißl"
 titleSeparator = "-"
 titleAddition = "Web Developer"
-description = "Web developer helping you build modern websites that are secure, fast, and SEO-ready — by default."
+description = "Web developer helping you build modern websites that are secure, fast, and SEO-ready"
 
 ## Open Graph
 images = ["hyas.png"]
 ogLocale = "en_US"
-titleHome = "Thomas Peißl Web Developer"
+titleHome = "Thomas Peißl - Web Developer"
 
 ## Twitter Cards
 twitterSite = "@thomaspeissl"
