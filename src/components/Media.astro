@@ -1,0 +1,67 @@
+---
+import { Image } from "@astrojs/image/components";
+
+const media = [
+  {
+    img: "/logos/media/zdnet.png",
+    name: "Zdnet",
+    width: 1000,
+    height: 655,
+    content:
+      "If you're looking for a new operating system that takes security seriously… Vanilla OS might be just the ticket.",
+  },
+  {
+    img: "/logos/media/the_register.png",
+    name: "The Register",
+    width: 425,
+    height: 79,
+    content:
+      "Vanilla OS is going for bigger, bolder improvement to the Linux desktop… it could prove transformative to the Linux industry…",
+  },
+  {
+    img: "/logos/media/techrepublic-logo.png",
+    name: "TechRepublic",
+    width: 750,
+    height: 171,
+    content:
+      "This will be a project you’ll want to keep a close watch on… I think Vanilla OS could be a real game-changer.",
+  },
+  {
+    img: "/logos/media/omg-linux.png",
+    name: "OMG! Linux",
+    width: 498,
+    height: 110,
+    content:
+      "Far more than “just another” Ubuntu fork, this distro takes a bold new approach to desktop computing using an immutable file system.",
+  },
+  {
+    img: "/logos/media/itsfoss-logo.png",
+    name: "It's Foss",
+    width: 300,
+    height: 108,
+    content:
+      "Being a new distro, Vanilla OS has a well-equipped feature set that you might like.",
+  },
+];
+---
+
+{
+  media.map((tech) => {
+    const { img, name, width, height, content } = tech;
+    return (
+      <article class="max-w-sm">
+        <a href="#" class="grid text-center gap-3 px-5">
+          <Image
+            src={img}
+            alt={name}
+            width={width}
+            height={height}
+            format="webp"
+            class="mx-auto saturate-0 h-8 w-fit dark:saturate-0 dark:invert"
+          />
+          <p class="text-xl text-[#3F3B47] dark:text-[#c3c3c3]">{content}</p>
+        </a>
+      </article>
+    );
+  })
+}

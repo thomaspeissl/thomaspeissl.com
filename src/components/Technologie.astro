@@ -1,0 +1,69 @@
+---
+import { Image } from "@astrojs/image/components";
+
+const technologies = [
+  {
+    name: "Ubuntu",
+    image: {
+      url: "/logos/ubuntu.png",
+      width: 1022,
+      height: 360,
+    },
+  },
+  {
+    name: "Gnome",
+    image: {
+      url: "/logos/gnome.png",
+      width: 1144,
+      height: 408,
+    },
+  },
+  {
+    name: "Distrobox",
+    image: {
+      url: "/logos/distrobox.png",
+      width: 1800,
+      height: 235,
+    },
+  },
+  {
+    name: "ABRoot",
+    image: {
+      url: "/logos/abroot.png",
+      width: 1130,
+      height: 534,
+    },
+  },
+  {
+    name: "Apx",
+    image: {
+      url: "/logos/apx.png",
+      width: 663,
+      height: 197,
+    },
+  },
+];
+---
+
+{
+  technologies.map((technologie) => {
+    const {
+      name,
+      image: { url, width, height },
+    } = technologie;
+    return (
+      <li class="p-3 hover:bg-[#f1f0ec] dark:hover:bg-[#2d2d2d] rounded">
+        <a aria-label="Ubuntu" href="#" class="w-32 h-14 flex items-center">
+          <Image
+            src={url}
+            alt={name}
+            width={width}
+            height={height}
+            format="webp"
+            class="dark:saturate-0 dark:invert"
+          />
+        </a>
+      </li>
+    );
+  })
+}

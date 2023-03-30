@@ -1,0 +1,281 @@
+---
+import { Image } from "@astrojs/image/components";
+import Faq from "../components/Faq.astro";
+import ArrowDown from "../components/icons/ArrowDown.astro";
+import Download from "../components/icons/Download.astro";
+import FastArrowRight from "../components/icons/FastArrowRight.astro";
+import Github from "../components/icons/Github.astro";
+import Media from "../components/Media.astro";
+import Technologie from "../components/Technologie.astro";
+import Layout from "../layouts/Layout.astro";
+
+const homeLatop = "/images/thomas-peissl.jpg";
+const homeRnote = "/images/home-rnote.png";
+const homeGaming = "/images/home-gaming.png";
+const homeApps = "/images/home-apps.png";
+const homePkgs = "/images/home-pkgs.png";
+const homeDeskApx = "/images/home-desk-apx.png";
+---
+
+<Layout title="Vanilla OS">
+  <section class="grid justify-items-center gap-3 py-16 px-5">
+    <Image
+      src={homeLatop}
+      format="webp"
+      width={750}
+      height={403}
+      alt="Thomas Peißl"
+    />
+    <a
+      href="#"
+      class="bg-black font-medium text-white py-3 px-6 rounded-full text-xl flex items-center gap-2"
+    >
+      Resume
+      <span>
+        <Download />
+      </span>
+    </a>
+    <div class="dark:text-white">
+      <a href="#" class="link">GitHub</a>
+      |
+      <a href="#" class="link">Reddit</a>
+    </div>
+    <a
+      href="#next"
+      class="grid gap-3 justify-items-center text-2xl mt-[5vh] dark:text-white"
+    >
+      Profile
+      <ArrowDown />
+    </a>
+  </section>
+
+  <section id="next" class="feature-card">
+    <h2 class="h2">Nicely Updated.</h2>
+    <p>Designed to last over time and always be faithful to you.</p>
+    <p>
+      Vanilla OS is an Ubuntu Linux-based Point Release distribution that
+      receives updates at the right time, neither before nor after, without
+      sacrificing security and functionality.
+    </p>
+  </section>
+  <section class="feature-card desktop">
+    <div class="grid gap-4 lg:text-start">
+      <h2 class="h2">Work.</h2>
+      <p>Your faithful colleague by day.</p>
+      <p>
+        Vanilla OS is designed to be a reliable and productive operating system
+        for your daily work. The GNOME Desktop is the perfect environment for
+        your daily tasks, with a clean and intuitive interface, everything is at
+        your fingertips.
+      </p>
+      <p>
+        Thanks to a wide range of applications, Vanilla OS is ready to meet your
+        needs, whether you are a developer, a designer, a student or a simple
+        user.
+      </p>
+    </div>
+    <Image
+      src={homeRnote}
+      width={612}
+      height={425}
+      alt="Rnote Flatpak App"
+      format="webp"
+      class="m-auto"
+    />
+  </section>
+  <section class="feature-card desktop">
+    <div class="grid gap-4 lg:text-start lg:order-1">
+      <h2 class="h2">Play.</h2>
+      <p>Your teammate by night.</p>
+      <p>
+        Play your favourite video games without worrying about setting up your
+        devices. Vanilla OS offers the latest stable Linux kernel, ensuring
+        support for the latest devices and the latest performance improvements.
+      </p>
+      <p>
+        Thanks to an integrated driver manager, your GPU will no longer be a
+        problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just
+        open the driver manager and follow the suggestions, it's that simple.
+      </p>
+    </div>
+    <Image
+      src={homeGaming}
+      width={740}
+      height={577}
+      alt="Games pic"
+      format="webp"
+      class="m-auto"
+    />
+  </section>
+  <section
+    class="grid place-items-center gap-4 text-center px-5 py-16 relative"
+  >
+    <Image
+      src={homeApps}
+      format="webp"
+      alt="Linux Apps"
+      class="opacity-50"
+      width={1748}
+      height={1559}
+    />
+    <div class="absolute">
+      <div class="grid gap-4">
+        <h2 class="h2">Complete.</h2>
+        <p>Acces a large catologue of applications.</p>
+      </div>
+    </div>
+  </section>
+  <section class="feature-card desktop">
+    <div class="grid gap-4 lg:text-start">
+      <h2 class="h2">Choice.</h2>
+      <p>Your system, your choices.</p>
+      <p>
+        Vanilla OS is an operating system that respects your choices, you are in
+        control, always.
+      </p>
+      <p>
+        At the first start you can choose which package format to use in Vanilla
+        OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take
+        care of the rest, putting you in the situation to start without
+        problems.
+      </p>
+    </div>
+    <Image
+      src={homePkgs}
+      width={440}
+      height={537}
+      format="webp"
+      alt="Packages format pic"
+      class="m-auto"
+    />
+  </section>
+  <section class="feature-card desktop">
+    <div class="grid gap-4 lg:text-start lg:order-1">
+      <h2 class="h2">Immutable...</h2>
+      <p>..but also not.</p>
+      <p>
+        Vanilla OS is an immutable operating system, core parts of the system
+        are locked down to prevent unwanted changes and corruption from
+        third-party applications or a faulty update. Some paths are still
+        writable, such as the home and configurations directories, this allows
+        the user to keep their files and ensure the normal functioning of
+        applications.
+      </p>
+      <p>
+        Core components are only updated via controlled and atomic transactions,
+        which are applied only on success and made available on reboot.
+      </p>
+      <p>
+        Need to install a component in the core system? No problem, you can open
+        a transactional shell at any time, make your changes and let the system
+        apply them automatically!
+      </p>
+      <a
+        class="font-medium bg-black text-white w-fit mx-auto lg:mx-0 py-3 px-6 rounded-full flex items-center gap-2"
+        href="#"
+        >Learn More
+        <FastArrowRight />
+      </a>
+    </div>
+    <Image
+      src={homeDeskApx}
+      format="webp"
+      width={612}
+      height={425}
+      alt="Apx preview"
+      class="m-auto"
+    />
+  </section>
+  <section
+    class="grid gap-4 lg:gap-10 text-center px-5 py-16 container mx-auto"
+  >
+    <h2 class="h2">Free & Open Source.</h2>
+    <p>You don't have to and you will never have to pay.</p>
+    <p>
+      Vanilla OS is built on free and Open Source technologies and software and
+      does not require any payment to be used, it is simply already yours.
+    </p>
+    <p>
+      All system components are released under Open Source licenses and the code
+      is available for your review, contribution or forking.
+    </p>
+    <a
+      class="bg-black rounded-full font-medium text-white py-3 px-6 w-fit mx-auto flex items-center gap-2"
+      href="#"
+    >
+      Fork on
+      <span>
+        <Github />
+      </span>
+      GitHub
+    </a>
+  </section>
+
+  <section class="bg-[#f2f1ed] py-16 dark:bg-[#2e2e2e]">
+    <div class="grid gap-3 px-5 container mx-auto">
+      <h2 class="text-5xl font-bold lg:text-7xl lg:text-center dark:text-white">
+        Frequently Asked Questions
+      </h2>
+      <p
+        class="text-xl lg:text-2xl lg:text-center text-[#3F3B47] dark:text-[#c3c3c3]"
+      >
+        Here are some of the most common questions we get asked.
+      </p>
+      <Faq />
+    </div>
+  </section>
+
+  <div class="py-16">
+    <section class="grid justify-items-center gap-8 px-5">
+      <h2 class="h2">Technologies</h2>
+      <p
+        class="text-xl text-center lg:text-2xl text-[#3F3B47] dark:text-[#c3c3c3]"
+      >
+        Vanilla OS is made possible by the following technologies.
+      </p>
+      <div>
+        <ul
+          class="grid grid-cols-2 md:auto-cols-fr md:grid-cols-5 gap-5 container mx-auto"
+        >
+          <Technologie />
+        </ul>
+      </div>
+      <small class="text-center dark:text-white"
+        >All trademark are the property of their respective owners.</small
+      >
+    </section>
+  </div>
+
+  <section class="py-16">
+    <div
+      class="grid gap-16 container mx-auto grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] justify-items-center"
+    >
+      <Media />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  html {
+    @apply dark:bg-[#242424];
+  }
+  .h2 {
+    @apply text-5xl font-bold lg:text-7xl dark:text-white;
+  }
+
+  .link {
+    @apply text-[#282828] border-[#282828] border-b border-dotted dark:text-white dark:border-white;
+  }
+
+  p {
+    @apply text-xl lg:text-2xl text-[#3F3B47] dark:text-[#c3c3c3];
+  }
+
+  .feature-card {
+    @apply grid gap-4 text-center px-5 py-16 container mx-auto;
+  }
+
+  .feature-card.desktop {
+    @apply lg:grid-cols-2 lg:items-start;
+  }
+</style>

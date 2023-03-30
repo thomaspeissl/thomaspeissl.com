@@ -1,0 +1,44 @@
+---
+const faqs = [
+  {
+    question: "Why Ubuntu Based?",
+    answer:
+      "Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.",
+  },
+  {
+    question: "Why not a rolling release?",
+    answer:
+      "Vanilla OS aims to be a stable and compatible distribution. Ubuntu is a distribution that respects both of these canons, being updated with strict control, without having to give up functionality and security.",
+    answer1:
+      "Thanks to Flatpak, Snap and Appimage, the user can always have the latest version of the applications they use, without having to wait for the next release of Vanilla OS.",
+  },
+  {
+    question: "Why not OStree or [name_here]",
+    answer:
+      "Vanilla OS uses an A/B structure ABRoot, which transacts updates atomically between two root micro partitions. The benefits of this system are the guarantee that the system is altered only when the entire transaction is successful (concept of atomicity), furthermore, the double root partition structure allows you to roll back to the previous state, directly from your boot, you will always have a home to come back to.",
+    answer1:
+      "This structure, unlike others, is compatible with already existing distributions and does not require a complex setup and allows easy re-initialization of the system without data loss.",
+  },
+];
+---
+
+<div class="grid gap-5 py-5 lg:py-10 lg:gap-10">
+  {
+    faqs.map((faq) => {
+      const { question, answer, answer1 } = faq;
+      return (
+        <details class="p-5 bg-[#0000000f] dark:bg-[#0000002e] rounded-2xl">
+          <summary class="text-xl font-bold dark:text-white">
+            {question}
+          </summary>
+          <div class="grid gap-4 lg:gap-10">
+            <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">{answer}</p>
+            {answer1 && (
+              <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">{answer1}</p>
+            )}
+          </div>
+        </details>
+      );
+    })
+  }
+</div>

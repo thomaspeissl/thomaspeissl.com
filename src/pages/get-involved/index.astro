@@ -1,0 +1,78 @@
+---
+import LayoutPage from "../../layouts/LayoutPage.astro";
+
+const cards = [
+  {
+    title: "Translations",
+    content:
+      "Translate Vanilla OS into your language or improve existing translations to make it more acesible to everyone.",
+    link: "Translate",
+  },
+  {
+    title: "Development",
+    content:
+      "Contribute to the development of Vanilla OS by suggesting new features, reporting bugs or contributing code.",
+    link: "Development",
+  },
+  {
+    title: "Documentation",
+    content:
+      "Good documentation is essential for users and developers to understand how to use Vanilla OS. Help us improve it.",
+    link: "Documentation",
+  },
+  {
+    title: "Support",
+    content:
+      "Help other users to get the most out of Vanilla OS. Answer questions on our Discord server, help with bug reports and more.",
+    link: "Support",
+  },
+  {
+    title: "Funding",
+    content:
+      "Like other projects, Vanilla OS has some costs to cover. You can help us with a donation or by becoming a sponsor.",
+    link: "Donate",
+  },
+  {
+    title: "Handbook",
+    content:
+      "Contribute guides and tutorials to help others get the most out of their Vanilla OS installation.",
+    link: "Handbook",
+  },
+];
+---
+
+<LayoutPage
+  title="Vanilla OS Get Involved"
+  name="Get Involved with Vanilla OS"
+  description="Everythin we do is Open Source. you can contribute in many ways."
+>
+  <section class="py-16 grid gap-5 lg:grid-cols-2 container mx-auto">
+    {
+      cards.map((card) => {
+        const { title, content, link } = card;
+        return (
+          <div class="px-5 lg:px-0 grid">
+            <article class="bg-[#F2F1ED] dark:bg-[#2d2d2d] grid justify-items-center text-center rounded-xl p-5 content-between shadow-lg drop-shadow-lg">
+              <h2 class="text-3xl lg:text-4xl font-bold dark:text-white after:content-[''] after:block after:bg-[#ffbf48] after:h-1 after:w-10 after:rounded-lg after:my-2">
+                {title}
+              </h2>
+              <p class="text-lg lg:text-2xl my-4 dark:text-white">{content}</p>
+              <a
+                href="#"
+                class="bg-black rounded-full py-3 px-6 text-white lg:text-xl"
+              >
+                {link}
+              </a>
+            </article>
+          </div>
+        );
+      })
+    }
+  </section>
+</LayoutPage>
+
+<style>
+  html {
+    @apply bg-[url('/images/pattern-get-involved.png')];
+  }
+</style>
