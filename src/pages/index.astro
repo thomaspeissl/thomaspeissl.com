@@ -27,19 +27,13 @@ const homeDeskApx = "/images/home-desk-apx.png";
       alt="Thomas Peißl"
     />
     <a
-      href="#"
+      href="https://github.com/sponsors/thomaspeissl/"
       class="bg-black font-medium text-white py-3 px-6 rounded-full text-xl flex items-center gap-2"
     >
-      Resume
-      <span>
-        <Download />
-      </span>
+      GitHub
+      <Github />
     </a>
-    <div class="dark:text-white">
-      <a href="#" class="link">GitHub</a>
-      |
-      <a href="#" class="link">Reddit</a>
-    </div>
+    
     <a
       href="#next"
       class="grid gap-3 justify-items-center text-2xl mt-[5vh] dark:text-white"
@@ -51,9 +45,10 @@ const homeDeskApx = "/images/home-desk-apx.png";
 
   <section id="next" class="feature-card">
     <h2 class="h2">Nicely Updated.</h2>
-    <p>Designed to last over time and always be faithful to you.</p>
+    <p>I work with computers to build and improve websites. I also enjoy exploring new tech and keeping digital systems stable and secure.</p>
+    <p>My work is designed to last over time and always be faithful to you.</p>
     <p>
-      Vanilla OS is an Ubuntu Linux-based Point Release distribution that
+      It
       receives updates at the right time, neither before nor after, without
       sacrificing security and functionality.
     </p>
@@ -63,13 +58,13 @@ const homeDeskApx = "/images/home-desk-apx.png";
       <h2 class="h2">Work.</h2>
       <p>Your faithful colleague by day.</p>
       <p>
-        Vanilla OS is designed to be a reliable and productive operating system
-        for your daily work. The GNOME Desktop is the perfect environment for
+        My applications are designed to be a reliable and productive systems
+        for your daily work. The Web is the perfect environment for
         your daily tasks, with a clean and intuitive interface, everything is at
         your fingertips.
       </p>
       <p>
-        Thanks to a wide range of applications, Vanilla OS is ready to meet your
+        I can build a wide range of applications, that are ready to meet your
         needs, whether you are a developer, a designer, a student or a simple
         user.
       </p>
@@ -88,14 +83,12 @@ const homeDeskApx = "/images/home-desk-apx.png";
       <h2 class="h2">Play.</h2>
       <p>Your teammate by night.</p>
       <p>
-        Play your favourite video games without worrying about setting up your
-        devices. Vanilla OS offers the latest stable Linux kernel, ensuring
-        support for the latest devices and the latest performance improvements.
+        Thanks to recent developments, we Linux enthusiasts who are always on the hunt for the perfect distro are finally able to join the gaming party.
       </p>
-      <p>
-        Thanks to an integrated driver manager, your GPU will no longer be a
-        problem, be it AMD®, Intel® or NVIDIA®, if something is missing, just
-        open the driver manager and follow the suggestions, it's that simple.
+      <p>  
+        Play your favourite video games without worrying about setting up your
+        devices. Modern distros like <a class="link" href="https://pop.system76.com">Pop!_OS</a> or <a class="link" href="https://vanillaos.org">Vanilla OS</a> offer the latest stable Linux kernel, ensuring
+        support for the latest devices and the latest performance improvements.
       </p>
     </div>
     <Image
@@ -124,84 +117,26 @@ const homeDeskApx = "/images/home-desk-apx.png";
         <p>Acces a large catologue of applications.</p>
       </div>
     </div>
-  </section>
-  <section class="feature-card desktop">
-    <div class="grid gap-4 lg:text-start">
-      <h2 class="h2">Choice.</h2>
-      <p>Your system, your choices.</p>
-      <p>
-        Vanilla OS is an operating system that respects your choices, you are in
-        control, always.
-      </p>
-      <p>
-        At the first start you can choose which package format to use in Vanilla
-        OS (Flatpak, Snap, Appimage ..), you choose and Vanilla OS will take
-        care of the rest, putting you in the situation to start without
-        problems.
-      </p>
-    </div>
-    <Image
-      src={homePkgs}
-      width={440}
-      height={537}
-      format="webp"
-      alt="Packages format pic"
-      class="m-auto"
-    />
-  </section>
-  <section class="feature-card desktop">
-    <div class="grid gap-4 lg:text-start lg:order-1">
-      <h2 class="h2">Immutable...</h2>
-      <p>..but also not.</p>
-      <p>
-        Vanilla OS is an immutable operating system, core parts of the system
-        are locked down to prevent unwanted changes and corruption from
-        third-party applications or a faulty update. Some paths are still
-        writable, such as the home and configurations directories, this allows
-        the user to keep their files and ensure the normal functioning of
-        applications.
-      </p>
-      <p>
-        Core components are only updated via controlled and atomic transactions,
-        which are applied only on success and made available on reboot.
-      </p>
-      <p>
-        Need to install a component in the core system? No problem, you can open
-        a transactional shell at any time, make your changes and let the system
-        apply them automatically!
-      </p>
-      <a
-        class="font-medium bg-black text-white w-fit mx-auto lg:mx-0 py-3 px-6 rounded-full flex items-center gap-2"
-        href="#"
-        >Learn More
-        <FastArrowRight />
-      </a>
-    </div>
-    <Image
-      src={homeDeskApx}
-      format="webp"
-      width={612}
-      height={425}
-      alt="Apx preview"
-      class="m-auto"
-    />
+        <div class="dark:text-white"> 
+       <a href="https://pop.system76.com" class="link">Pop!_OS</a> 
+       | 
+       <a href="https://vanillaos.org" class="link">Vanilla OS</a> 
+     </div>
   </section>
   <section
     class="grid gap-4 lg:gap-10 text-center px-5 py-16 container mx-auto"
   >
     <h2 class="h2">Free & Open Source.</h2>
-    <p>You don't have to and you will never have to pay.</p>
     <p>
-      Vanilla OS is built on free and Open Source technologies and software and
-      does not require any payment to be used, it is simply already yours.
+      Most of my work is built on top of free and Open Source technologies and software.
     </p>
     <p>
-      All system components are released under Open Source licenses and the code
+      Many tools that I created are released under Open Source licenses and the code
       is available for your review, contribution or forking.
     </p>
     <a
       class="bg-black rounded-full font-medium text-white py-3 px-6 w-fit mx-auto flex items-center gap-2"
-      href="#"
+      href="https://github.com/sponsors/thomaspeissl/"
     >
       Fork on
       <span>
@@ -219,40 +154,12 @@ const homeDeskApx = "/images/home-desk-apx.png";
       <p
         class="text-xl lg:text-2xl lg:text-center text-[#3F3B47] dark:text-[#c3c3c3]"
       >
-        Here are some of the most common questions we get asked.
+        Here are some of the most common questions I get asked.
       </p>
       <Faq />
     </div>
   </section>
 
-  <div class="py-16">
-    <section class="grid justify-items-center gap-8 px-5">
-      <h2 class="h2">Technologies</h2>
-      <p
-        class="text-xl text-center lg:text-2xl text-[#3F3B47] dark:text-[#c3c3c3]"
-      >
-        Vanilla OS is made possible by the following technologies.
-      </p>
-      <div>
-        <ul
-          class="grid grid-cols-2 md:auto-cols-fr md:grid-cols-5 gap-5 container mx-auto"
-        >
-          <Technologie />
-        </ul>
-      </div>
-      <small class="text-center dark:text-white"
-        >All trademark are the property of their respective owners.</small
-      >
-    </section>
-  </div>
-
-  <section class="py-16">
-    <div
-      class="grid gap-16 container mx-auto grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] justify-items-center"
-    >
-      <Media />
-    </div>
-  </section>
 </Layout>
 
 <style>
