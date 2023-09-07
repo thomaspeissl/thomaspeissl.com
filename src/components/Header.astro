@@ -42,42 +42,6 @@ const navbar = [
         class="w-32 dark:invert"
       />
     </a>
-    <button
-      id="menuIcon"
-      aria-label="menu"
-      class="grid gap-[2px] justify-center w-5 h-full lg:hidden"
-    >
-      <span
-        aria-hidden="true"
-        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
-      <span
-        aria-hidden="true"
-        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
-      <span
-        aria-hidden="true"
-        class="w-1 h-1 bg-black rounded-full dark:bg-white"></span>
-    </button>
-    <nav
-      id="menu"
-      class="hidden lg:grid lg:relative transition-all lg:top-0 lg:left-0 lg:right-0 fixed top-24 left-3 right-3 p-5 rounded-md drop-shadow-md lg:drop-shadow-none bg-transparent lg:p-0 dark:text-white"
-    >
-      <ul
-        class="grid lg:grid-flow-col justify-items-center gap-3 lg:gap-7 text-lg"
-      >
-        {
-          navbar.map((page) => {
-            const { title, url } = page;
-            return (
-              <li>
-                <a class="hover:font-semibold transition-all" href={url}>
-                  {title}
-                </a>
-              </li>
-            );
-          })
-        }
-      </ul>
-    </nav>
   </div>
 </header>
 
