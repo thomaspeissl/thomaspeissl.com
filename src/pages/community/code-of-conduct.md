@@ -1,7 +1,6 @@
 ---
 title: Code of Conduct
-description: Be nice and respectful.
-layout: ../../layouts/LayoutPage.astro
+layout: ../../layouts/BlogPostLayout.astro
 ---
 
 Be nice and respectful.
