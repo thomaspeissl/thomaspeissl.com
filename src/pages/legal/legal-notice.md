@@ -7,7 +7,8 @@ layout: ../../layouts/BlogPostLayout.astro
 ## Thomas Peißl
 Trattengasse 32  
 9500 Villach  
-Austria
+Austria  
+support@thomaspeissl.com
 
 ## Timezone
 Central European Time (CET)  
