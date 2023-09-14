@@ -7,7 +7,7 @@ const { frontmatter } = Astro.props;
 <Layout title={"Vanilla OS" + " - " + frontmatter.title}>
   <section class="bg-[#F2F1ED] dark:bg-[#2d2d2d]">
     <div class="grid gap-4 text-center px-5 py-16 container mx-auto">
-      <h1 class="text-5xl font-bold lg:text-7xl dark:text-white">
+      <h1 class="text-5xl font-bold lg:text-7xl dark:text-white custom-break-word">
         {frontmatter.title}
       </h1>
       <p class="text-xl lg:text-2xl dark:text-[#c3c3c3]">
@@ -71,5 +71,8 @@ const { frontmatter } = Astro.props;
 
   .blog-content .grid-images {
     @apply grid grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))];
+  }
+  .custom-break-word {
+      overflow-wrap: anywhere;
   }
 </style>
