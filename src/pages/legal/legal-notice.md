@@ -8,7 +8,7 @@ layout: ../../layouts/BlogPostLayout.astro
 Trattengasse 32  
 9500 Villach  
 Austria  
-support@thomaspeissl.com
+info@thomaspeissl.com
 
 ## Timezone
 Central European Time (CET)  

@@ -34,9 +34,9 @@ I may update this privacy policy to reflect changes in my practices or for other
 
 ## Contact me
 
-If you have any questions or concerns about this privacy policy or my privacy practices, please contact me at support@thomaspeissl.com.
+If you have any questions or concerns about this privacy policy or my privacy practices, please contact me at info@thomaspeissl.com.
 
 By using my website, you consent to the terms of this privacy policy.
 
-Thomas Peißl support@thomaspeissl.com
+Thomas Peißl info@thomaspeissl.com
 
