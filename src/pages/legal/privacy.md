@@ -10,7 +10,7 @@ Effective date: September 13, 2023
 
 ## Introduction
 
-Welcome to thomaspeissl.com! At thomaspeissl.com, I take your privacy seriously. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit our website.
+Welcome to thomaspeissl.com! At thomaspeissl.com, I take your privacy seriously. This Privacy Policy outlines how we collect, use, and protect your personal information when you visit my website.
 
 ## Information I collect
 
