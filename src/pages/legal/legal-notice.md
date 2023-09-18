@@ -5,8 +5,8 @@ layout: ../../layouts/BlogPostLayout.astro
 ---
 
 ## Thomas Peißl
-Trattengasse 32  
-9500 Villach  
+Ahornweg 15  
+9601 Arnoldstein
 Austria  
 info@thomaspeissl.com
 
