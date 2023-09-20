@@ -6,7 +6,7 @@ layout: ../../layouts/BlogPostLayout.astro
 
 ## Thomas Peißl
 Ahornweg 15  
-9601 Arnoldstein
+9601 Arnoldstein  
 Austria  
 info@thomaspeissl.com
 
