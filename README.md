@@ -47,4 +47,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## Credits
 
 - [Vanilla OS](https://vanillaos.org) - Beautiful website
+- [Ali Paredes](https://github.com/alinpr18) - Astro Template
 - [Astro](https://astro.build) - Web framework
