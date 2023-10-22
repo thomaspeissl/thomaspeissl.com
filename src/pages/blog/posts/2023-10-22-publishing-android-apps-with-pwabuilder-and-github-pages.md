@@ -1,6 +1,6 @@
 ---
 title: "Publishing Android Apps with PWABuilder and GitHub Pages: Tips & Tricks"
-description: "Discover how to seamlessly publish Android apps with PWABuilder when hosted on GitHub Pages. Learn tips on ensuring a native-like experience without browser bars and addressing the `.well-known` folder issue with Jekyll.""
+description: "Discover how to seamlessly publish Android apps with PWABuilder when hosted on GitHub Pages. Learn tips on ensuring a native-like experience without browser bars and addressing the `.well-known` folder issue with Jekyll."
 published: 2023-10-22
 layout: ../../../layouts/BlogPostLayout.astro
 ---
