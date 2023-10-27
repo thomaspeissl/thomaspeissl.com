@@ -16,18 +16,9 @@ Before releasing an update, you need to ensure that you're using the same signin
 - Instead of generating a new key, select the option to "Use existing key".
 - Upload your previously used key. If you've used PWA Builder for your initial release, you should have the key stored safely.
 
-## 2. Add new "sha256_cert_fingerprints" to .well_known/assetlinks.json
+## 2. Release on Google Play
 
-The `assetlinks.json` file is crucial for the Android OS to recognize and verify the relationship between your PWA and its Android counterpart. When you update your app, it's imperative to add the new SHA-256 certificate fingerprint.
-
-- First, obtain the SHA-256 certificate fingerprint from the Android App Signing section in the Google Play Console.
-- Next, navigate to your server's `/.well_known/` directory.
-- Open `assetlinks.json` and append the new "sha256_cert_fingerprints" to the existing list. Ensure the format remains consistent with previous entries.
-- Save the changes and ensure that this file is publicly accessible from your server.
-
-## 3. Release on Google Play
-
-Now that you have prepared the updated package and made necessary changes on your server, it's time to release the update on Google Play.
+Now that you have prepared the updated package, it's time to release the update on Google Play.
 
 - Head to the Google Play Console and select your app.
 - Navigate to the 'Release' section.
