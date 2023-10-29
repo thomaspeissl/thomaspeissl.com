@@ -33,4 +33,6 @@ By adding this file, you're instructing GitHub Pages not to use Jekyll, ensuring
 
 ## Wrapping Up
 
+I recently published the Android game [Dungeon Crawler on Demand](https://play.google.com/store/apps/details?id=com.thomaspeissl.quick_dungeon_crawler_od.twa) with this exact steps.
+
 Publishing an Android app with PWABuilder while hosting on GitHub Pages requires attention to some unique challenges. By understanding these issues and their solutions, you can ensure a smooth deployment of your PWA and its Android app counterpart. Happy coding!
