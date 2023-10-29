@@ -26,4 +26,6 @@ Now that you have prepared the updated package, it's time to release the update 
 - Make sure you fill out any necessary information about the update, such as the changes made or new features added.
 - Once everything is set, click 'Review Release', and upon ensuring all looks good, hit 'Rollout'.
 
+I recently updated the Android game [Dungeon Crawler on Demand](https://play.google.com/store/apps/details?id=com.thomaspeissl.quick_dungeon_crawler_od.twa) with this exact steps.
+
 In conclusion, updating your PWA's Android version need not be a daunting task. With tools like PWA Builder, the process becomes streamlined, ensuring that your users always enjoy the best and most secure version of your app. Keep these steps in mind, and your update release will be a breeze!
