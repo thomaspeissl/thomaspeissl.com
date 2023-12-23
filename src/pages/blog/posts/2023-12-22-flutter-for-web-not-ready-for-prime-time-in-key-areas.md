@@ -1,6 +1,6 @@
 ---
 title: "Flutter for Web: Not Ready for Prime Time in Key Areas"
-description: "Explore the limitations of Flutter for web development in my latest blog post. We discuss critical issues like sitemap generation, loading times, deep linking, SEO, and accessibility, offering insights into why Flutter may not be the ideal choice for significant web projects."
+description: "Explore the limitations of Flutter for web development in my latest blog post. We discuss critical issues like sitemap generation, loading times, deep linking, SEO, and accessibility, offering insights into why Flutter may not be the ideal choice for significant web projects (yet)."
 published: 2023-12-22
 layout: ../../../layouts/BlogPostLayout.astro
 ---
