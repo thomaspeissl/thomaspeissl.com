@@ -13,6 +13,7 @@ import Layout from "../layouts/Layout.astro";
 const homeLatop = "/images/thomas-peissl.jpg";
 const homeRnote = "/images/home-rnote.png";
 const homeGaming = "/images/home-gaming.png";
+const homeBook = "/images/the-adventure-of-the-little-oak-a-journey-to-the-sun.jpg";
 const homeApps = "/images/home-apps.png";
 const homePkgs = "/images/home-pkgs.png";
 const homeDeskApx = "/images/home-desk-apx.png";
@@ -91,6 +92,28 @@ const homeDeskApx = "/images/home-desk-apx.png";
       width={740}
       height={577}
       alt="Games pic"
+      format="webp"
+      class="m-auto"
+    />
+  </section>
+ <section class="feature-card desktop">
+    <div class="grid gap-4 lg:text-start lg:order-1">
+      <h2 class="h2">Read</h2>
+      <p>
+        This inspirational children's ebook is designed to encourage children to dream of adventure, appreciate diversity, and stimulate their curiosity.  Each chapter offers a magical journey that takes young readers into a world full of fantasy and wisdom.
+      </p>
+      <a href="https://amzn.eu/d/5pTEERA"
+      class="bg-black font-medium text-white py-3 px-6 rounded-full text-xl flex items-center gap-2"
+      >The Adventure of the Little Oak: A Journey to the Sun</a>
+      <a href="https://amzn.eu/d/0kpnKB2"
+      class="bg-black font-medium text-white py-3 px-6 rounded-full text-xl flex items-center gap-2"
+      >Das Abenteuer der kleinen Eiche: Eine Reise zur Sonne (German Edition)</a>
+    </div>
+    <Image
+      src={homeBook}
+      width={910}
+      height={1024}
+      alt="The Adventure of the Little Oak: A Journey to the Sun"
       format="webp"
       class="m-auto"
     />
