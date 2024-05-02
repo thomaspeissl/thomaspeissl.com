@@ -16,3 +16,8 @@ Note that this guide is valid if Shopware was installed using shopware-installer
 3. Execute `composer update --no-scripts`.
 4. Run `bin/console system:update:finish`.
 5. Execute `yes | composer recipes:install --force --reset`.
+
+## Update plugins
+
+1. Run `bin/console plugin:update:all`.
+2. Run `bin/console cache:clear`.
