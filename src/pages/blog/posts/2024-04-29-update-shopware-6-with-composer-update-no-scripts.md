@@ -11,11 +11,13 @@ Note that this guide is valid if Shopware was installed using shopware-installer
 
 ## Follow these steps to update Shopware 6 with composer:
 
+0. Ensure that you have a backup of your database and files.
 1. Run `bin/console system:update:prepare`.
 2. Edit `composer.json` and update the version of `shopware/core`, `shopware/administration`, `shopware/elasticsearch` and `shopware/storefront`.
-3. Execute `composer update --no-scripts`.
-4. Run `bin/console system:update:finish`.
-5. Execute `yes | composer recipes:install --force --reset`.
+3. If you installed any plugins with composer, update their versions as well.
+4. Execute `composer update --no-scripts`.
+5. Run `bin/console system:update:finish`.
+6. Execute `yes | composer recipes:install --force --reset`.
 
 ## Update plugins
 
