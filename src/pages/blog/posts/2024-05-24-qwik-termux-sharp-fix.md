@@ -1,20 +1,24 @@
 --- 
-title: "How to fix Qwik Framework Sharp Error on Termux"
-description: "Use one npm command to get the Qwik framework up and running on your Android device."
+title: "How to Fix the Qwik Framework Sharp Error on Termux"
+description: "If you encounter the `sharp` module error when running `npm start` on your Android device, there's a simple solution."
 published: 2024-05-24
 layout: ../../../layouts/BlogPostLayout.astro 
 ---
 
-Note that this works for me on my armv8l device.
+This method is tested on armv8l devices.
 
-## The fix
+## Solution
 
-The error you might see for the `npm start` command:
+When you see the error message:
 
-*Error: Could not load the "sharp" module using the android-arm runtime*
+```
+Error: Could not load the “sharp” module using the android-arm runtime
+```
 
-Luckily, there is an easy fix for this error:
+Resolve it by running:
 
-`npm install --cpu=wasm32 sharp`
+```
+npm install --cpu=wasm32 sharp
+```
 
-After running this command, your `npm start` should work fine.
+After executing this command, `npm start` should function correctly.
