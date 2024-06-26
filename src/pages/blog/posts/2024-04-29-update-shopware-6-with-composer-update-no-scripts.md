@@ -36,9 +36,10 @@ Note that this guide is valid if Shopware was installed using shopware-installer
    - Composer will notify you of any conflicts. If conflicts occur, manually resolve them by editing the `composer.json` file and re-running the previous command. For example, when upgrading from Shopware 6.5 to 6.6, change the required package `symfony/runtime` to `>=5`. Or update PHP as required.
 
 5. **Remove Bin Directory:**
-   - Remove the `bin` directory to ensure `recipes:install` can update files like `bin/console`:
+   - Remove the `bin` directory and index.php to ensure `recipes:install` can update files like `bin/console`:
      ```sh
      rm -rf bin
+     rm public/index.php
      ```
 
 6. **Install Composer Recipes:**
