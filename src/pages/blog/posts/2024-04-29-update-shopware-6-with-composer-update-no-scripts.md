@@ -70,4 +70,4 @@ Note that this guide is valid if Shopware was installed using shopware-installer
 
 ---
 
-If you found this guide helpful, please star my GitHub repository for this website at [https://github.com/thomaspeissl/thomaspeissl.com](https://github.com/thomaspeissl/thomaspeissl.com).
+If you found this guide helpful, please star my [GitHub repository for this website](https://github.com/thomaspeissl/thomaspeissl.com).
