@@ -67,7 +67,3 @@ Note that this guide is valid if Shopware was installed using shopware-installer
      ```sh
      bin/console cache:clear
      ```
-
----
-
-If you found this guide helpful, please star my [GitHub repository for this website](https://github.com/thomaspeissl/thomaspeissl.com).
